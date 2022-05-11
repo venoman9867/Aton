@@ -33,6 +33,9 @@ public class Main {
         };
         Runnable cherTurn = () -> {//Строки песни для Cher
             Arrays.stream(lyrics).forEach(arr -> {
+                if(arr[0].equals("Sonny, Cher")){//Cher и Sonny поют вместе!
+                    System.out.println("Cher: "+arr[1]);
+                }
                 if (arr[0].equals("Cher")) {
                     synchronized (lock) {
                         try {
@@ -43,7 +46,7 @@ public class Main {
                             throw new RuntimeException(e);
                         }
                     }
-                } else {
+                } else {//если строка не принадлежит Cher мы ждем пока Sonny ее прочитает
                     synchronized (lock) {
                         try {
                             lock.notify();
@@ -58,6 +61,9 @@ public class Main {
         };
         Runnable sonnyTurn = () -> {//Строки песни для Sonny
             Arrays.stream(lyrics).forEach(arr -> {
+                if(arr[0].equals("Sonny, Cher")){//Cher и Sonny поют вместе!
+                    System.out.println("Sonny: "+arr[1]);
+                }
                 if (arr[0].equals("Sonny")) {
                     synchronized (lock) {
                         try {
@@ -68,7 +74,7 @@ public class Main {
                             throw new RuntimeException(e);
                         }
                     }
-                }else {
+                } else {//если строка не принадлежит Sonny мы ждем пока Cher ее прочитает
                     synchronized (lock) {
                         try {
                             lock.notify();
