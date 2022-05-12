@@ -58,7 +58,7 @@ public class Main {
                     }
                 }
                 if (arr[1].equals("I got you babe \nI got you babe \nI got you babe \nI got you babe \nI got you babe")) {
-                    Thread.currentThread().interrupt();
+                    Thread.currentThread().interrupt();//если последняя строка песни прерываем поток
                 }
             });
         };
@@ -88,7 +88,7 @@ public class Main {
                     }
                 }
                 if (arr[1].equals("I got you babe \nI got you babe \nI got you babe \nI got you babe \nI got you babe")) {
-                    Thread.currentThread().interrupt();
+                    Thread.currentThread().interrupt();//тут тоже прерываем и выходим из завершаем программу
                     System.exit(0);
                 }
 
