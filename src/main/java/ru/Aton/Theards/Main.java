@@ -3,7 +3,8 @@ package ru.Aton.Theards;
 import java.util.Arrays;
 
 public class Main {
-    private static final Object lock = new Object();
+    private static final Object lock = new Object();//методы wait и notify не применимы для статического контекста поэтому
+    //я создал обьект блокировки
 
     public static void main(String[] args) {
         String[][] lyrics = {
@@ -33,9 +34,9 @@ public class Main {
         };
         Runnable cherTurn = () -> {//Строки песни для Cher
             Arrays.stream(lyrics).forEach(arr -> {
-                if(arr[0].equals("Sonny, Cher")){//Cher и Sonny поют вместе!
-                    System.out.println("Cher: "+arr[1]);
-                }
+                if (arr[0].equals("Sonny, Cher")) {//Cher и Sonny поют вместе!
+                    System.out.println("Cher: " + arr[1]);
+                }//тут они поют дуэтом в любом порядке
                 if (arr[0].equals("Cher")) {
                     synchronized (lock) {
                         try {
@@ -56,14 +57,16 @@ public class Main {
                         }
                     }
                 }
-
+                if (arr[1].equals("I got you babe \nI got you babe \nI got you babe \nI got you babe \nI got you babe")) {
+                    Thread.currentThread().interrupt();
+                }
             });
         };
         Runnable sonnyTurn = () -> {//Строки песни для Sonny
             Arrays.stream(lyrics).forEach(arr -> {
-                if(arr[0].equals("Sonny, Cher")){//Cher и Sonny поют вместе!
-                    System.out.println("Sonny: "+arr[1]);
-                }
+                if (arr[0].equals("Sonny, Cher")) {//Cher и Sonny поют вместе!
+                    System.out.println("Sonny: " + arr[1]);
+                }//тут они поют дуэтом в любом порядке
                 if (arr[0].equals("Sonny")) {
                     synchronized (lock) {
                         try {
@@ -84,6 +87,11 @@ public class Main {
                         }
                     }
                 }
+                if (arr[1].equals("I got you babe \nI got you babe \nI got you babe \nI got you babe \nI got you babe")) {
+                    Thread.currentThread().interrupt();
+                    System.exit(0);
+                }
+
             });
         };
         Thread cher = new Thread(cherTurn);
