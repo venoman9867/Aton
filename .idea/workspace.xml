@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="638a56fd-4170-4d4d-8853-42519b0898d7" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Theards/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/Aton/Theards/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Theards/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/Aton/Theards/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +23,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-18.0.1/Contents/Home/lib/src.zip!/java.base/java/util/LinkedList.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="28kLK02a3sk4mx7BoMrB45HpSwC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -42,7 +48,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/kurkinaleksandr/IdeaProjects/Aton&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.ru.Aton.Train.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.Aton.Theards.Main" />
       <module name="ru.Aton" />
@@ -69,8 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ru.Aton.Train.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.Aton.Train.Main" />
+      <module name="ru.Aton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.Aton.Train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.Aton.Train.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ru.Aton.Black_hat.Main" />
       </list>
@@ -97,7 +117,17 @@
       <workItem from="1652292783608" duration="686000" />
       <workItem from="1652293479202" duration="51000" />
       <workItem from="1652293587829" duration="61000" />
-      <workItem from="1652348373157" duration="2827000" />
+      <workItem from="1652348373157" duration="2943000" />
+      <workItem from="1652528432014" duration="12134000" />
+      <workItem from="1652603349732" duration="1680000" />
+      <workItem from="1652687768701" duration="3397000" />
+      <workItem from="1652702289642" duration="134000" />
+      <workItem from="1652714563263" duration="4396000" />
+      <workItem from="1652719850110" duration="4063000" />
+      <workItem from="1652781824761" duration="462000" />
+      <workItem from="1652794240736" duration="645000" />
+      <workItem from="1652867886582" duration="10359000" />
+      <workItem from="1652882602949" duration="8633000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1652277946355</created>
@@ -120,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652293592018</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1652351379173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652351379174</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit">
+      <created>1652351428404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652351428404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
