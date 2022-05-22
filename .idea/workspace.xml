@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="638a56fd-4170-4d4d-8853-42519b0898d7" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Theards/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/Aton/Theards/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/CircularLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/RandomTrain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Train/CircularLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Train/CircularLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Train/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/Aton/Train/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Train/RandomTrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/Aton/Train/RandomTrain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +134,11 @@
       <workItem from="1652794240736" duration="645000" />
       <workItem from="1652867886582" duration="10359000" />
       <workItem from="1652882602949" duration="8633000" />
+      <workItem from="1652949340818" duration="1301000" />
+      <workItem from="1652962258860" duration="5616000" />
+      <workItem from="1652973972557" duration="174000" />
+      <workItem from="1653047356771" duration="6176000" />
+      <workItem from="1653125259800" duration="1987000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1652277946355</created>
@@ -164,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652351428404</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1652949673597</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652949673598</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
