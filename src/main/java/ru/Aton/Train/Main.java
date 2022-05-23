@@ -7,15 +7,21 @@ public class Main {
       горит, то повторяем операцию. Если же нет, значит мы прошли полный круг и уже знаем ответ!*/
      static RandomTrain train=new RandomTrain();
     public static void main(String[] args) {
-        int count=0;
+
         int i=randomLocation();
+        int count=0;
         System.out.println("Вагонов в составе: "+train.getSize());
-        while (train.getRandomTrain().get(i).nextNode!=train.getHead()){
-            train.getRandomTrain().get(i).value=false;
-            count++;
-            train.getRandomTrain().get(i).nextNode=train.getRandomTrain().get(i++);
+        while (train.getRandomTrain().get(i).nextNode!=train.getHead()) {
+            for (int j = 0; j < train.getSize(); j++) {
+                count++;
+                if (train.getRandomTrain().get(i).value = true) {
+                    train.getRandomTrain().get(i).value = false;
+                    count=0;
+                    break;
+                }
+            }
         }
-        System.out.println("Вагонов посчиталось: "+count);
+        System.out.println("Вагонов посчиталось "+count);
 
     }
     public static int randomLocation(){
