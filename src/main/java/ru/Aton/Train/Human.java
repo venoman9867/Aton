@@ -19,9 +19,9 @@ public class Human {
                 currentCarriage=currentCarriage.nextCarriage;
                 count++;
             }else{
-                currentCarriage.value=false;
-                count=0;
-                continue;
+                currentCarriage.value=false;//выключаем свет
+                count=0;//обнуляем счетчик
+                continue;//начинаем по новой цикл
             }
 
         }while (head.value!=false);//делаем до дех пор пока head не будет false
