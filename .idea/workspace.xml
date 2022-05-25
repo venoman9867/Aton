@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638a56fd-4170-4d4d-8853-42519b0898d7" name="Changes" comment="commit" />
+    <list default="true" id="638a56fd-4170-4d4d-8853-42519b0898d7" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Train.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

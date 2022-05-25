@@ -7,7 +7,7 @@ public class Train {
     private Random random = new Random();
     private Carriage head;//это первый поезд
     private Carriage tail;//это последний поезд
-    private final int countOfCarriages = random.nextInt(1, 1000);//это сколько в нем будет вагонов
+    public final int countOfCarriages = random.nextInt(1, 1000);//это сколько в нем будет вагонов
 
     private ArrayList<Carriage> train = new ArrayList<>();//это наш поезд
 
@@ -28,7 +28,7 @@ public class Train {
     private Carriage addCarriage(boolean value) {
         Carriage newNode = new Carriage(value);
         if (train.size() == 0) {
-            head = randomPosition();
+            head = newNode;
         } else {
             newNode.nextCarriage = head;
             newNode.previousCarriage = tail;

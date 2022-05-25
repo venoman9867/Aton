@@ -10,11 +10,17 @@ public class Human {
     public void changeLight() {
     }
 
-    //метод для передвижения по вагонам
-    public void travel() {
+    //метод обхода по вагонам и подсчета их количества
+    public void countCarriages() {
         int count = 0;
-
-
+        Carriage head = train.randomPosition();
+        Carriage currentCarriage = train.randomPosition();
+        System.out.println("Сколько должно было быть: "+train.countOfCarriages);
+        do {
+            currentCarriage = currentCarriage.nextCarriage;
+            count++;
+        } while (currentCarriage != head);
+        System.out.println("Сколько насчиталось: "+count);
     }
 
 }
