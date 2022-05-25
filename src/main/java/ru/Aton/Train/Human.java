@@ -15,9 +15,9 @@ public class Human {
         System.out.println("Сколько должно было быть: "+train.countOfCarriages);
         do{
             currentCarriage=currentCarriage.nextCarriage;
-            if(currentCarriage.value=false){
-                currentCarriage=currentCarriage.nextCarriage;
-                count++;
+            if(currentCarriage.value=false){//если свет включен
+                currentCarriage=currentCarriage.nextCarriage;//переходим в новый вагон
+                count++;//и увеличиваем счет на единицу
             }else{
                 currentCarriage.value=false;//выключаем свет
                 count=0;//обнуляем счетчик
