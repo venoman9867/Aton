@@ -23,7 +23,7 @@ public class Human {
                 count++;
             }
 
-        }while (head.value!=false);//делаем до дех пор пока head не будет false
+        }while (head.value==false);//делаем до дех пор пока head не будет false
         System.out.println("Сколько насчиталось: "+count);
     }
 
