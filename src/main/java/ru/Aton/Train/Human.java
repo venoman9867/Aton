@@ -10,15 +10,19 @@ public class Human {
     public void countCarriages() {
         int count = 0;
         Carriage head=train.randomPosition();
-        Carriage currentCarriage=head;
+        head.value=true;
+        Carriage currentCarriage=head.nextCarriage;
         System.out.println("Сколько должно было быть: "+train.countOfCarriages);
         do{
-            if(currentCarriage.value==true){
+            if(currentCarriage.value==true){//если свет включен в вагоне включен выключаем его и начинаем заново
                 currentCarriage.value=false;
                 count=0;
-                break;
+                continue;
+            }else{
+                currentCarriage=currentCarriage.nextCarriage;//если свет выключен, просто идем дальше и считаем!
+                count++;
             }
-            count++;
+
         }while (head.value!=false);//делаем до дех пор пока head не будет false
         System.out.println("Сколько насчиталось: "+count);
     }
