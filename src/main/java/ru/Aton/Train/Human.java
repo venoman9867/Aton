@@ -4,26 +4,27 @@ import java.util.ArrayList;
 
 public class Human {
     private Train train = new Train();
-    ArrayList<Carriage> randomTrain = train.makeTrain();
+    private ArrayList<Carriage> randomTrain = train.makeTrain();
+    private Carriage head=train.randomPosition();
 
     //метод обхода по вагонам и подсчета их количества
     public void countCarriages() {
         int count = 0;
-        Carriage head=train.randomPosition();
-        head.value=true;
-        Carriage currentCarriage=head.nextCarriage;
+        head.value=true;//первым делом человек включает свет в первом вагоне
+        Carriage currentCarriage=head;
         System.out.println("Сколько должно было быть: "+train.countOfCarriages);
         do{
-            if(currentCarriage.value==true){//если свет включен в вагоне включен выключаем его и начинаем заново
+            currentCarriage=currentCarriage.nextCarriage;
+            if(currentCarriage.value=false){
+                currentCarriage=currentCarriage.nextCarriage;
+                count++;
+            }else{
                 currentCarriage.value=false;
                 count=0;
                 continue;
-            }else{
-                currentCarriage=currentCarriage.nextCarriage;//если свет выключен, просто идем дальше и считаем!
-                count++;
             }
 
-        }while (head.value==false);//делаем до дех пор пока head не будет false
+        }while (head.value!=false);//делаем до дех пор пока head не будет false
         System.out.println("Сколько насчиталось: "+count);
     }
 
