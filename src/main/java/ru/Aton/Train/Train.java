@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Train {
-    private Random random = new Random();
+    private final Random random = new Random();
     private Carriage head;//это первый поезд
     private Carriage tail;//это последний поезд
     public final int countOfCarriages = random.nextInt(1, 1000);//это сколько в нем будет вагонов
 
-    private ArrayList<Carriage> train = new ArrayList<>();//это наш поезд
+    private final ArrayList<Carriage> train = new ArrayList<>();//это наш поезд
 
     //тут мы заполняем поезд с рандомно включенным светом
     public ArrayList<Carriage> makeTrain() {

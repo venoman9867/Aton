@@ -3,27 +3,28 @@ package ru.Aton.Train;
 import java.util.ArrayList;
 
 public class Human {
-    private Train train = new Train();
-    private ArrayList<Carriage> randomTrain = train.makeTrain();
-    private Carriage head = randomTrain.get(train.randomPosition());
+    private final Train train = new Train();
+    private final ArrayList<Carriage> randomTrain = train.makeTrain();
+    private final Carriage head = randomTrain.get(train.randomPosition());
 
     //метод обхода по вагонам и подсчета их количества
     public void countCarriages() {
         int count = 0;
         //если свет в вагоне выключен мы его включаем
-        if (head.value == false) {
+        if (!head.value) {
             head.value = true;
         }
         //Завожу переменную текущий вагон, чтобы итерироваться по поезду
         Carriage currentCarriage = head;
+        System.out.println("Сколько вагонов в составе: "+train.countOfCarriages);
         do {
             currentCarriage = currentCarriage.nextCarriage;//текущим вагоном становится следующий вагон
             count++;
-            if (currentCarriage.value == true) {// если свет включен выключаем его
+            if (currentCarriage.value) {// если свет включен выключаем его
                 currentCarriage.value = false;
             }
-        } while (head.value != false);
-        System.out.println("Вагонов в составе: " + count);
+        } while (head.value);//делаем до тех пор, пока голова поезда не выключится
+        System.out.println("Сколько вагонов насчиталось: " + count);
     }
 
 }
