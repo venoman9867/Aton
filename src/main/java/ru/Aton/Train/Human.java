@@ -10,6 +10,7 @@ public class Human {
     //метод обхода по вагонам и подсчета их количества
     public void countCarriages() {
         int count = 0;
+        boolean end = true;
         //если свет в вагоне выключен мы его включаем
         if (!head.value) {
             head.value = true;
@@ -25,10 +26,16 @@ public class Human {
                 for (int i = count; i > 0; i--) {// и идем обратно
                     currentCarriage = currentCarriage.previousCarriage;
                 }
-                count = 0;//сбрасываем счетчик
+                if (!currentCarriage.value) {
+                    System.out.println("Сколько вагонов насчиталось: " + count);
+                    end=false;
+                } else {
+                    count = 0;
+                }//сбрасываем счетчик
+
             }
-        } while (currentCarriage.nextCarriage != head);//делаем до тех пор, пока голова поезда не выключится
-        System.out.println("Сколько вагонов насчиталось: " + (count + 1));
+        } while (end);//делаем до тех пор, пока голова поезда не выключится
+
     }
 
 }
