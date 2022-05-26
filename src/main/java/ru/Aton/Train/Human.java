@@ -16,15 +16,19 @@ public class Human {
         }
         //Завожу переменную текущий вагон, чтобы итерироваться по поезду
         Carriage currentCarriage = head;
-        System.out.println("Сколько вагонов в составе: "+train.countOfCarriages);
+        System.out.println("Сколько вагонов в составе: " + train.countOfCarriages);
         do {
             currentCarriage = currentCarriage.nextCarriage;//текущим вагоном становится следующий вагон
             count++;
-            if (currentCarriage.value) {// если свет включен выключаем его
+            if (currentCarriage.value) {// если свет включен, выключаем его
                 currentCarriage.value = false;
+                for (int i = count; i > 0; i--) {// и идем обратно
+                    currentCarriage = currentCarriage.previousCarriage;
+                }
+                count = 0;//сбрасываем счетчик
             }
-        } while (head.value);//делаем до тех пор, пока голова поезда не выключится
-        System.out.println("Сколько вагонов насчиталось: " + count);
+        } while (currentCarriage.nextCarriage != head);//делаем до тех пор, пока голова поезда не выключится
+        System.out.println("Сколько вагонов насчиталось: " + (count + 1));
     }
 
 }
