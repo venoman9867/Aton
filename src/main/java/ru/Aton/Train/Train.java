@@ -20,8 +20,8 @@ public class Train {
     }
 
     //метод возвращающий рандомную позицию человека в поезде
-    public Carriage randomPosition() {
-        return train.get(random.nextInt(1, countOfCarriages));
+    public int randomPosition() {
+        return random.nextInt(1,countOfCarriages);
     }
 
     //этот метод нужен для сцепления вагонов, при добавлении нового

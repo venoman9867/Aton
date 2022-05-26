@@ -5,27 +5,25 @@ import java.util.ArrayList;
 public class Human {
     private Train train = new Train();
     private ArrayList<Carriage> randomTrain = train.makeTrain();
-    private Carriage head=train.randomPosition();
+    private Carriage head = randomTrain.get(train.randomPosition());
 
     //метод обхода по вагонам и подсчета их количества
     public void countCarriages() {
         int count = 0;
-        head.value=true;//первым делом человек включает свет в первом вагоне
-        Carriage currentCarriage=head;
-        System.out.println("Сколько должно было быть: "+train.countOfCarriages);
-        do{
-            currentCarriage=currentCarriage.nextCarriage;
-            if(currentCarriage.value=false){//если свет включен
-                currentCarriage=currentCarriage.nextCarriage;//переходим в новый вагон
-                count++;//и увеличиваем счет на единицу
-            }else{
-                currentCarriage.value=false;//выключаем свет
-                count=0;//обнуляем счетчик
-                continue;//начинаем по новой цикл
+        //если свет в вагоне выключен мы его включаем
+        if (head.value == false) {
+            head.value = true;
+        }
+        //Завожу переменную текущий вагон, чтобы итерироваться по поезду
+        Carriage currentCarriage = head;
+        do {
+            currentCarriage = currentCarriage.nextCarriage;//текущим вагоном становится следующий вагон
+            count++;
+            if (currentCarriage.value == true) {// если свет включен выключаем его
+                currentCarriage.value = false;
             }
-
-        }while (head.value!=false);//делаем до дех пор пока head не будет false
-        System.out.println("Сколько насчиталось: "+count);
+        } while (head.value != false);
+        System.out.println("Вагонов в составе: " + count);
     }
 
 }
