@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="638a56fd-4170-4d4d-8853-42519b0898d7" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Carriage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Human.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/Aton/Train/Train.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Train/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/Aton/Train/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/Aton/Train/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/Aton/Train/Train.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +49,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kurkinaleksandr/IdeaProjects/Aton&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/kurkinaleksandr/IdeaProjects/Aton&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.ru.Aton.Train.Main">
@@ -136,6 +142,9 @@
       <workItem from="1653125259800" duration="1987000" />
       <workItem from="1653391098332" duration="2288000" />
       <workItem from="1653470401760" duration="6846000" />
+      <workItem from="1653500027201" duration="39000" />
+      <workItem from="1653553009678" duration="1633000" />
+      <workItem from="1653562650286" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1652277946355</created>
@@ -235,7 +244,28 @@
       <option name="project" value="LOCAL" />
       <updated>1653498049397</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="commit">
+      <created>1653499881625</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653499881625</updated>
+    </task>
+    <task id="LOCAL-00016" summary="commit">
+      <created>1653499925553</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653499925553</updated>
+    </task>
+    <task id="LOCAL-00017" summary="commit">
+      <created>1653499970075</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653499970075</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
